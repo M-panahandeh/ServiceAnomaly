@@ -1,0 +1,278 @@
+{
+    "data": [
+        {
+            "traceID": "cdbcd76fc231bcf62ba36eefe1082877",
+            "spans": [
+                {
+                    "traceID": "cdbcd76fc231bcf62ba36eefe1082877",
+                    "spanID": "2ba36eefe1082877",
+                    "operationName": "ts-station-service.default.svc.cluster.local:12345/*",
+                    "references": [],
+                    "startTime": 1652922280477868,
+                    "duration": 60008371,
+                    "tags": [
+                        {
+                            "key": "http.status_code",
+                            "type": "string",
+                            "value": "200"
+                        },
+                        {
+                            "key": "upstream_cluster.name",
+                            "type": "string",
+                            "value": "outbound|12345||ts-station-service.default.svc.cluster.local"
+                        },
+                        {
+                            "key": "response_flags",
+                            "type": "string",
+                            "value": "DI"
+                        },
+                        {
+                            "key": "response_size",
+                            "type": "string",
+                            "value": "44"
+                        },
+                        {
+                            "key": "user_agent",
+                            "type": "string",
+                            "value": "Java/1.8.0_111"
+                        },
+                        {
+                            "key": "http.protocol",
+                            "type": "string",
+                            "value": "HTTP/1.1"
+                        },
+                        {
+                            "key": "istio.canonical_revision",
+                            "type": "string",
+                            "value": "latest"
+                        },
+                        {
+                            "key": "peer.address",
+                            "type": "string",
+                            "value": "172.17.0.84"
+                        },
+                        {
+                            "key": "upstream_cluster",
+                            "type": "string",
+                            "value": "outbound|12345||ts-station-service.default.svc.cluster.local"
+                        },
+                        {
+                            "key": "http.url",
+                            "type": "string",
+                            "value": "http://ts-station-service:12345/api/v1/stationservice/stations/id/Su%20Zhou"
+                        },
+                        {
+                            "key": "node_id",
+                            "type": "string",
+                            "value": "sidecar~172.17.0.84~ts-basic-service-cb9bdd754-zbwcl.default~default.svc.cluster.local"
+                        },
+                        {
+                            "key": "downstream_cluster",
+                            "type": "string",
+                            "value": "-"
+                        },
+                        {
+                            "key": "request_size",
+                            "type": "string",
+                            "value": "0"
+                        },
+                        {
+                            "key": "istio.namespace",
+                            "type": "string",
+                            "value": "default"
+                        },
+                        {
+                            "key": "istio.canonical_service",
+                            "type": "string",
+                            "value": "ts-basic-service"
+                        },
+                        {
+                            "key": "http.method",
+                            "type": "string",
+                            "value": "GET"
+                        },
+                        {
+                            "key": "component",
+                            "type": "string",
+                            "value": "proxy"
+                        },
+                        {
+                            "key": "istio.mesh_id",
+                            "type": "string",
+                            "value": "cluster.local"
+                        },
+                        {
+                            "key": "guid:x-request-id",
+                            "type": "string",
+                            "value": "5eb24002-9f90-997e-8dce-e9e30f080460"
+                        },
+                        {
+                            "key": "span.kind",
+                            "type": "string",
+                            "value": "client"
+                        },
+                        {
+                            "key": "internal.span.format",
+                            "type": "string",
+                            "value": "zipkin"
+                        }
+                    ],
+                    "logs": [],
+                    "processID": "p1",
+                    "warnings": null
+                },
+                {
+                    "traceID": "cdbcd76fc231bcf62ba36eefe1082877",
+                    "spanID": "d3ce8fcc918e9bb7",
+                    "operationName": "ts-station-service.default.svc.cluster.local:12345/*",
+                    "references": [
+                        {
+                            "refType": "CHILD_OF",
+                            "traceID": "cdbcd76fc231bcf62ba36eefe1082877",
+                            "spanID": "2ba36eefe1082877"
+                        }
+                    ],
+                    "startTime": 1652922340480769,
+                    "duration": 4542,
+                    "tags": [
+                        {
+                            "key": "request_size",
+                            "type": "string",
+                            "value": "0"
+                        },
+                        {
+                            "key": "guid:x-request-id",
+                            "type": "string",
+                            "value": "5eb24002-9f90-997e-8dce-e9e30f080460"
+                        },
+                        {
+                            "key": "istio.canonical_service",
+                            "type": "string",
+                            "value": "ts-station-service"
+                        },
+                        {
+                            "key": "response_flags",
+                            "type": "string",
+                            "value": "-"
+                        },
+                        {
+                            "key": "http.protocol",
+                            "type": "string",
+                            "value": "HTTP/1.1"
+                        },
+                        {
+                            "key": "downstream_cluster",
+                            "type": "string",
+                            "value": "-"
+                        },
+                        {
+                            "key": "peer.address",
+                            "type": "string",
+                            "value": "172.17.0.84"
+                        },
+                        {
+                            "key": "http.url",
+                            "type": "string",
+                            "value": "http://ts-station-service:12345/api/v1/stationservice/stations/id/Su%20Zhou"
+                        },
+                        {
+                            "key": "istio.namespace",
+                            "type": "string",
+                            "value": "default"
+                        },
+                        {
+                            "key": "upstream_cluster.name",
+                            "type": "string",
+                            "value": "inbound|12345||"
+                        },
+                        {
+                            "key": "istio.mesh_id",
+                            "type": "string",
+                            "value": "cluster.local"
+                        },
+                        {
+                            "key": "http.method",
+                            "type": "string",
+                            "value": "GET"
+                        },
+                        {
+                            "key": "istio.canonical_revision",
+                            "type": "string",
+                            "value": "latest"
+                        },
+                        {
+                            "key": "upstream_cluster",
+                            "type": "string",
+                            "value": "inbound|12345||"
+                        },
+                        {
+                            "key": "node_id",
+                            "type": "string",
+                            "value": "sidecar~172.17.0.41~ts-station-service-6454db789f-dhnb6.default~default.svc.cluster.local"
+                        },
+                        {
+                            "key": "response_size",
+                            "type": "string",
+                            "value": "44"
+                        },
+                        {
+                            "key": "http.status_code",
+                            "type": "string",
+                            "value": "200"
+                        },
+                        {
+                            "key": "user_agent",
+                            "type": "string",
+                            "value": "Java/1.8.0_111"
+                        },
+                        {
+                            "key": "component",
+                            "type": "string",
+                            "value": "proxy"
+                        },
+                        {
+                            "key": "span.kind",
+                            "type": "string",
+                            "value": "server"
+                        },
+                        {
+                            "key": "internal.span.format",
+                            "type": "string",
+                            "value": "zipkin"
+                        }
+                    ],
+                    "logs": [],
+                    "processID": "p2",
+                    "warnings": null
+                }
+            ],
+            "processes": {
+                "p1": {
+                    "serviceName": "ts-basic-service.default",
+                    "tags": [
+                        {
+                            "key": "ip",
+                            "type": "string",
+                            "value": "172.17.0.84"
+                        }
+                    ]
+                },
+                "p2": {
+                    "serviceName": "ts-station-service.default",
+                    "tags": [
+                        {
+                            "key": "ip",
+                            "type": "string",
+                            "value": "172.17.0.41"
+                        }
+                    ]
+                }
+            },
+            "warnings": null
+        }
+    ],
+    "total": 0,
+    "limit": 0,
+    "offset": 0,
+    "errors": null
+}

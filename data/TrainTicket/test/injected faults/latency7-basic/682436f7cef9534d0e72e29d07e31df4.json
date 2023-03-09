@@ -1,0 +1,288 @@
+{
+    "data": [
+        {
+            "traceID": "682436f7cef9534d0e72e29d07e31df4",
+            "spans": [
+                {
+                    "traceID": "682436f7cef9534d0e72e29d07e31df4",
+                    "spanID": "0e72e29d07e31df4",
+                    "operationName": "ts-basic-service.default.svc.cluster.local:15680/*",
+                    "references": [],
+                    "startTime": 1652912956576981,
+                    "duration": 60033388,
+                    "tags": [
+                        {
+                            "key": "istio.mesh_id",
+                            "type": "string",
+                            "value": "cluster.local"
+                        },
+                        {
+                            "key": "downstream_cluster",
+                            "type": "string",
+                            "value": "-"
+                        },
+                        {
+                            "key": "upstream_cluster",
+                            "type": "string",
+                            "value": "outbound|15680||ts-basic-service.default.svc.cluster.local"
+                        },
+                        {
+                            "key": "user_agent",
+                            "type": "string",
+                            "value": "Java/1.8.0_111"
+                        },
+                        {
+                            "key": "istio.canonical_revision",
+                            "type": "string",
+                            "value": "latest"
+                        },
+                        {
+                            "key": "istio.namespace",
+                            "type": "string",
+                            "value": "default"
+                        },
+                        {
+                            "key": "http.method",
+                            "type": "string",
+                            "value": "GET"
+                        },
+                        {
+                            "key": "node_id",
+                            "type": "string",
+                            "value": "sidecar~172.17.0.42~ts-ticketinfo-service-5b76bffbcc-xdvcs.default~default.svc.cluster.local"
+                        },
+                        {
+                            "key": "response_size",
+                            "type": "string",
+                            "value": "226"
+                        },
+                        {
+                            "key": "peer.address",
+                            "type": "string",
+                            "value": "172.17.0.42"
+                        },
+                        {
+                            "key": "http.url",
+                            "type": "string",
+                            "value": "http://ts-basic-service:15680/api/v1/basicservice/basic/Shang%20Hai"
+                        },
+                        {
+                            "key": "guid:x-request-id",
+                            "type": "string",
+                            "value": "145bf231-615d-901c-b945-76a8268de17f"
+                        },
+                        {
+                            "key": "http.status_code",
+                            "type": "string",
+                            "value": "500"
+                        },
+                        {
+                            "key": "request_size",
+                            "type": "string",
+                            "value": "0"
+                        },
+                        {
+                            "key": "component",
+                            "type": "string",
+                            "value": "proxy"
+                        },
+                        {
+                            "key": "istio.canonical_service",
+                            "type": "string",
+                            "value": "ts-ticketinfo-service"
+                        },
+                        {
+                            "key": "error",
+                            "type": "bool",
+                            "value": true
+                        },
+                        {
+                            "key": "upstream_cluster.name",
+                            "type": "string",
+                            "value": "outbound|15680||ts-basic-service.default.svc.cluster.local"
+                        },
+                        {
+                            "key": "response_flags",
+                            "type": "string",
+                            "value": "DI"
+                        },
+                        {
+                            "key": "http.protocol",
+                            "type": "string",
+                            "value": "HTTP/1.1"
+                        },
+                        {
+                            "key": "span.kind",
+                            "type": "string",
+                            "value": "client"
+                        },
+                        {
+                            "key": "internal.span.format",
+                            "type": "string",
+                            "value": "zipkin"
+                        }
+                    ],
+                    "logs": [],
+                    "processID": "p1",
+                    "warnings": null
+                },
+                {
+                    "traceID": "682436f7cef9534d0e72e29d07e31df4",
+                    "spanID": "9d261c5a202d566f",
+                    "operationName": "ts-basic-service.default.svc.cluster.local:15680/*",
+                    "references": [
+                        {
+                            "refType": "CHILD_OF",
+                            "traceID": "682436f7cef9534d0e72e29d07e31df4",
+                            "spanID": "0e72e29d07e31df4"
+                        }
+                    ],
+                    "startTime": 1652913016581492,
+                    "duration": 28424,
+                    "tags": [
+                        {
+                            "key": "http.protocol",
+                            "type": "string",
+                            "value": "HTTP/1.1"
+                        },
+                        {
+                            "key": "error",
+                            "type": "bool",
+                            "value": true
+                        },
+                        {
+                            "key": "http.method",
+                            "type": "string",
+                            "value": "GET"
+                        },
+                        {
+                            "key": "response_size",
+                            "type": "string",
+                            "value": "226"
+                        },
+                        {
+                            "key": "istio.canonical_revision",
+                            "type": "string",
+                            "value": "latest"
+                        },
+                        {
+                            "key": "upstream_cluster",
+                            "type": "string",
+                            "value": "inbound|15680||"
+                        },
+                        {
+                            "key": "request_size",
+                            "type": "string",
+                            "value": "0"
+                        },
+                        {
+                            "key": "istio.mesh_id",
+                            "type": "string",
+                            "value": "cluster.local"
+                        },
+                        {
+                            "key": "istio.namespace",
+                            "type": "string",
+                            "value": "default"
+                        },
+                        {
+                            "key": "user_agent",
+                            "type": "string",
+                            "value": "Java/1.8.0_111"
+                        },
+                        {
+                            "key": "istio.canonical_service",
+                            "type": "string",
+                            "value": "ts-basic-service"
+                        },
+                        {
+                            "key": "response_flags",
+                            "type": "string",
+                            "value": "-"
+                        },
+                        {
+                            "key": "component",
+                            "type": "string",
+                            "value": "proxy"
+                        },
+                        {
+                            "key": "node_id",
+                            "type": "string",
+                            "value": "sidecar~172.17.0.84~ts-basic-service-cb9bdd754-zbwcl.default~default.svc.cluster.local"
+                        },
+                        {
+                            "key": "http.status_code",
+                            "type": "string",
+                            "value": "500"
+                        },
+                        {
+                            "key": "http.url",
+                            "type": "string",
+                            "value": "http://ts-basic-service:15680/api/v1/basicservice/basic/Shang%20Hai"
+                        },
+                        {
+                            "key": "downstream_cluster",
+                            "type": "string",
+                            "value": "-"
+                        },
+                        {
+                            "key": "upstream_cluster.name",
+                            "type": "string",
+                            "value": "inbound|15680||"
+                        },
+                        {
+                            "key": "peer.address",
+                            "type": "string",
+                            "value": "172.17.0.42"
+                        },
+                        {
+                            "key": "guid:x-request-id",
+                            "type": "string",
+                            "value": "145bf231-615d-901c-b945-76a8268de17f"
+                        },
+                        {
+                            "key": "span.kind",
+                            "type": "string",
+                            "value": "server"
+                        },
+                        {
+                            "key": "internal.span.format",
+                            "type": "string",
+                            "value": "zipkin"
+                        }
+                    ],
+                    "logs": [],
+                    "processID": "p2",
+                    "warnings": null
+                }
+            ],
+            "processes": {
+                "p1": {
+                    "serviceName": "ts-ticketinfo-service.default",
+                    "tags": [
+                        {
+                            "key": "ip",
+                            "type": "string",
+                            "value": "172.17.0.42"
+                        }
+                    ]
+                },
+                "p2": {
+                    "serviceName": "ts-basic-service.default",
+                    "tags": [
+                        {
+                            "key": "ip",
+                            "type": "string",
+                            "value": "172.17.0.84"
+                        }
+                    ]
+                }
+            },
+            "warnings": null
+        }
+    ],
+    "total": 0,
+    "limit": 0,
+    "offset": 0,
+    "errors": null
+}

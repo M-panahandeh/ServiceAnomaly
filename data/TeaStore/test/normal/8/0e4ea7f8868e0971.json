@@ -1,0 +1,806 @@
+{
+    "data": [
+        {
+            "traceID": "0e4ea7f8868e0971",
+            "spans": [
+                {
+                    "traceID": "0e4ea7f8868e0971",
+                    "spanID": "5b647e09933ccdeb",
+                    "operationName": "teastore-persistence.default.svc.cluster.local:8080/*",
+                    "references": [
+                        {
+                            "refType": "CHILD_OF",
+                            "traceID": "0e4ea7f8868e0971",
+                            "spanID": "0e4ea7f8868e0971"
+                        }
+                    ],
+                    "startTime": 1659545582088566,
+                    "duration": 3216,
+                    "tags": [
+                        {
+                            "key": "istio.mesh_id",
+                            "type": "string",
+                            "value": "cluster.local"
+                        },
+                        {
+                            "key": "upstream_cluster.name",
+                            "type": "string",
+                            "value": "outbound|8080||teastore-persistence.default.svc.cluster.local"
+                        },
+                        {
+                            "key": "downstream_cluster",
+                            "type": "string",
+                            "value": "-"
+                        },
+                        {
+                            "key": "node_id",
+                            "type": "string",
+                            "value": "sidecar~172.17.0.14~teastore-webui-7cb5985449-rb6pm.default~default.svc.cluster.local"
+                        },
+                        {
+                            "key": "request_size",
+                            "type": "string",
+                            "value": "0"
+                        },
+                        {
+                            "key": "http.url",
+                            "type": "string",
+                            "value": "http://teastore-persistence:8080/tools.descartes.teastore.persistence/rest/categories"
+                        },
+                        {
+                            "key": "response_flags",
+                            "type": "string",
+                            "value": "-"
+                        },
+                        {
+                            "key": "http.method",
+                            "type": "string",
+                            "value": "GET"
+                        },
+                        {
+                            "key": "guid:x-request-id",
+                            "type": "string",
+                            "value": "09cd0431-42fb-4745-aff2-996692dbf256"
+                        },
+                        {
+                            "key": "upstream_cluster",
+                            "type": "string",
+                            "value": "outbound|8080||teastore-persistence.default.svc.cluster.local"
+                        },
+                        {
+                            "key": "istio.namespace",
+                            "type": "string",
+                            "value": "default"
+                        },
+                        {
+                            "key": "istio.canonical_service",
+                            "type": "string",
+                            "value": "teastore"
+                        },
+                        {
+                            "key": "http.status_code",
+                            "type": "string",
+                            "value": "200"
+                        },
+                        {
+                            "key": "component",
+                            "type": "string",
+                            "value": "proxy"
+                        },
+                        {
+                            "key": "response_size",
+                            "type": "string",
+                            "value": "347"
+                        },
+                        {
+                            "key": "istio.canonical_revision",
+                            "type": "string",
+                            "value": "latest"
+                        },
+                        {
+                            "key": "user_agent",
+                            "type": "string",
+                            "value": "Jersey/3.0.2 (Async HTTP Grizzly Connector 3.0.2)"
+                        },
+                        {
+                            "key": "peer.address",
+                            "type": "string",
+                            "value": "172.17.0.14"
+                        },
+                        {
+                            "key": "http.protocol",
+                            "type": "string",
+                            "value": "HTTP/1.1"
+                        },
+                        {
+                            "key": "span.kind",
+                            "type": "string",
+                            "value": "client"
+                        },
+                        {
+                            "key": "internal.span.format",
+                            "type": "string",
+                            "value": "zipkin"
+                        }
+                    ],
+                    "logs": [],
+                    "processID": "p1",
+                    "warnings": [
+                        "invalid parent span IDs=0e4ea7f8868e0971; skipping clock skew adjustment"
+                    ]
+                },
+                {
+                    "traceID": "0e4ea7f8868e0971",
+                    "spanID": "2498e9b4ade4b7f0",
+                    "operationName": "teastore-persistence.default.svc.cluster.local:8080/*",
+                    "references": [
+                        {
+                            "refType": "CHILD_OF",
+                            "traceID": "0e4ea7f8868e0971",
+                            "spanID": "5b647e09933ccdeb"
+                        }
+                    ],
+                    "startTime": 1659545582088971,
+                    "duration": 2390,
+                    "tags": [
+                        {
+                            "key": "response_size",
+                            "type": "string",
+                            "value": "347"
+                        },
+                        {
+                            "key": "node_id",
+                            "type": "string",
+                            "value": "sidecar~172.17.0.15~teastore-persistence-7588d7656b-z6r6f.default~default.svc.cluster.local"
+                        },
+                        {
+                            "key": "peer.address",
+                            "type": "string",
+                            "value": "172.17.0.14"
+                        },
+                        {
+                            "key": "istio.canonical_revision",
+                            "type": "string",
+                            "value": "latest"
+                        },
+                        {
+                            "key": "istio.namespace",
+                            "type": "string",
+                            "value": "default"
+                        },
+                        {
+                            "key": "upstream_cluster.name",
+                            "type": "string",
+                            "value": "inbound|8080||"
+                        },
+                        {
+                            "key": "user_agent",
+                            "type": "string",
+                            "value": "Jersey/3.0.2 (Async HTTP Grizzly Connector 3.0.2)"
+                        },
+                        {
+                            "key": "request_size",
+                            "type": "string",
+                            "value": "0"
+                        },
+                        {
+                            "key": "guid:x-request-id",
+                            "type": "string",
+                            "value": "09cd0431-42fb-4745-aff2-996692dbf256"
+                        },
+                        {
+                            "key": "upstream_cluster",
+                            "type": "string",
+                            "value": "inbound|8080||"
+                        },
+                        {
+                            "key": "istio.mesh_id",
+                            "type": "string",
+                            "value": "cluster.local"
+                        },
+                        {
+                            "key": "component",
+                            "type": "string",
+                            "value": "proxy"
+                        },
+                        {
+                            "key": "http.url",
+                            "type": "string",
+                            "value": "http://teastore-persistence:8080/tools.descartes.teastore.persistence/rest/categories"
+                        },
+                        {
+                            "key": "istio.canonical_service",
+                            "type": "string",
+                            "value": "teastore"
+                        },
+                        {
+                            "key": "http.status_code",
+                            "type": "string",
+                            "value": "200"
+                        },
+                        {
+                            "key": "downstream_cluster",
+                            "type": "string",
+                            "value": "-"
+                        },
+                        {
+                            "key": "response_flags",
+                            "type": "string",
+                            "value": "-"
+                        },
+                        {
+                            "key": "http.method",
+                            "type": "string",
+                            "value": "GET"
+                        },
+                        {
+                            "key": "http.protocol",
+                            "type": "string",
+                            "value": "HTTP/1.1"
+                        },
+                        {
+                            "key": "span.kind",
+                            "type": "string",
+                            "value": "server"
+                        },
+                        {
+                            "key": "internal.span.format",
+                            "type": "string",
+                            "value": "zipkin"
+                        }
+                    ],
+                    "logs": [],
+                    "processID": "p2",
+                    "warnings": null
+                },
+                {
+                    "traceID": "0e4ea7f8868e0971",
+                    "spanID": "5a364c579d5cd72c",
+                    "operationName": "teastore-auth.default.svc.cluster.local:8080/*",
+                    "references": [
+                        {
+                            "refType": "CHILD_OF",
+                            "traceID": "0e4ea7f8868e0971",
+                            "spanID": "0e4ea7f8868e0971"
+                        }
+                    ],
+                    "startTime": 1659545582094189,
+                    "duration": 4750,
+                    "tags": [
+                        {
+                            "key": "http.protocol",
+                            "type": "string",
+                            "value": "HTTP/1.1"
+                        },
+                        {
+                            "key": "http.method",
+                            "type": "string",
+                            "value": "POST"
+                        },
+                        {
+                            "key": "peer.address",
+                            "type": "string",
+                            "value": "172.17.0.14"
+                        },
+                        {
+                            "key": "component",
+                            "type": "string",
+                            "value": "proxy"
+                        },
+                        {
+                            "key": "http.url",
+                            "type": "string",
+                            "value": "http://teastore-auth:8080/tools.descartes.teastore.auth/rest/useractions/isloggedin"
+                        },
+                        {
+                            "key": "upstream_cluster.name",
+                            "type": "string",
+                            "value": "outbound|8080||teastore-auth.default.svc.cluster.local"
+                        },
+                        {
+                            "key": "downstream_cluster",
+                            "type": "string",
+                            "value": "-"
+                        },
+                        {
+                            "key": "istio.namespace",
+                            "type": "string",
+                            "value": "default"
+                        },
+                        {
+                            "key": "request_size",
+                            "type": "string",
+                            "value": "390"
+                        },
+                        {
+                            "key": "response_flags",
+                            "type": "string",
+                            "value": "-"
+                        },
+                        {
+                            "key": "istio.mesh_id",
+                            "type": "string",
+                            "value": "cluster.local"
+                        },
+                        {
+                            "key": "node_id",
+                            "type": "string",
+                            "value": "sidecar~172.17.0.14~teastore-webui-7cb5985449-rb6pm.default~default.svc.cluster.local"
+                        },
+                        {
+                            "key": "http.status_code",
+                            "type": "string",
+                            "value": "200"
+                        },
+                        {
+                            "key": "user_agent",
+                            "type": "string",
+                            "value": "Jersey/3.0.2 (Async HTTP Grizzly Connector 3.0.2)"
+                        },
+                        {
+                            "key": "istio.canonical_revision",
+                            "type": "string",
+                            "value": "latest"
+                        },
+                        {
+                            "key": "guid:x-request-id",
+                            "type": "string",
+                            "value": "5589055b-d8cd-40f2-853e-f0d9d428ce7f"
+                        },
+                        {
+                            "key": "upstream_cluster",
+                            "type": "string",
+                            "value": "outbound|8080||teastore-auth.default.svc.cluster.local"
+                        },
+                        {
+                            "key": "istio.canonical_service",
+                            "type": "string",
+                            "value": "teastore"
+                        },
+                        {
+                            "key": "response_size",
+                            "type": "string",
+                            "value": "264"
+                        },
+                        {
+                            "key": "span.kind",
+                            "type": "string",
+                            "value": "client"
+                        },
+                        {
+                            "key": "internal.span.format",
+                            "type": "string",
+                            "value": "zipkin"
+                        }
+                    ],
+                    "logs": [],
+                    "processID": "p1",
+                    "warnings": [
+                        "invalid parent span IDs=0e4ea7f8868e0971; skipping clock skew adjustment"
+                    ]
+                },
+                {
+                    "traceID": "0e4ea7f8868e0971",
+                    "spanID": "aca973e5ad684653",
+                    "operationName": "teastore-auth.default.svc.cluster.local:8080/*",
+                    "references": [
+                        {
+                            "refType": "CHILD_OF",
+                            "traceID": "0e4ea7f8868e0971",
+                            "spanID": "5a364c579d5cd72c"
+                        }
+                    ],
+                    "startTime": 1659545582094675,
+                    "duration": 3846,
+                    "tags": [
+                        {
+                            "key": "upstream_cluster",
+                            "type": "string",
+                            "value": "inbound|8080||"
+                        },
+                        {
+                            "key": "http.status_code",
+                            "type": "string",
+                            "value": "200"
+                        },
+                        {
+                            "key": "response_flags",
+                            "type": "string",
+                            "value": "-"
+                        },
+                        {
+                            "key": "istio.canonical_revision",
+                            "type": "string",
+                            "value": "latest"
+                        },
+                        {
+                            "key": "request_size",
+                            "type": "string",
+                            "value": "390"
+                        },
+                        {
+                            "key": "response_size",
+                            "type": "string",
+                            "value": "264"
+                        },
+                        {
+                            "key": "http.url",
+                            "type": "string",
+                            "value": "http://teastore-auth:8080/tools.descartes.teastore.auth/rest/useractions/isloggedin"
+                        },
+                        {
+                            "key": "downstream_cluster",
+                            "type": "string",
+                            "value": "-"
+                        },
+                        {
+                            "key": "peer.address",
+                            "type": "string",
+                            "value": "172.17.0.14"
+                        },
+                        {
+                            "key": "guid:x-request-id",
+                            "type": "string",
+                            "value": "5589055b-d8cd-40f2-853e-f0d9d428ce7f"
+                        },
+                        {
+                            "key": "http.protocol",
+                            "type": "string",
+                            "value": "HTTP/1.1"
+                        },
+                        {
+                            "key": "istio.canonical_service",
+                            "type": "string",
+                            "value": "teastore"
+                        },
+                        {
+                            "key": "http.method",
+                            "type": "string",
+                            "value": "POST"
+                        },
+                        {
+                            "key": "component",
+                            "type": "string",
+                            "value": "proxy"
+                        },
+                        {
+                            "key": "user_agent",
+                            "type": "string",
+                            "value": "Jersey/3.0.2 (Async HTTP Grizzly Connector 3.0.2)"
+                        },
+                        {
+                            "key": "upstream_cluster.name",
+                            "type": "string",
+                            "value": "inbound|8080||"
+                        },
+                        {
+                            "key": "istio.mesh_id",
+                            "type": "string",
+                            "value": "cluster.local"
+                        },
+                        {
+                            "key": "istio.namespace",
+                            "type": "string",
+                            "value": "default"
+                        },
+                        {
+                            "key": "node_id",
+                            "type": "string",
+                            "value": "sidecar~172.17.0.10~teastore-auth-5b56bc9b99-df6dv.default~default.svc.cluster.local"
+                        },
+                        {
+                            "key": "span.kind",
+                            "type": "string",
+                            "value": "server"
+                        },
+                        {
+                            "key": "internal.span.format",
+                            "type": "string",
+                            "value": "zipkin"
+                        }
+                    ],
+                    "logs": [],
+                    "processID": "p3",
+                    "warnings": null
+                },
+                {
+                    "traceID": "0e4ea7f8868e0971",
+                    "spanID": "a7be6d3bf31c1b59",
+                    "operationName": "teastore-image.default.svc.cluster.local:8080/*",
+                    "references": [
+                        {
+                            "refType": "CHILD_OF",
+                            "traceID": "0e4ea7f8868e0971",
+                            "spanID": "0e4ea7f8868e0971"
+                        }
+                    ],
+                    "startTime": 1659545582100451,
+                    "duration": 3387,
+                    "tags": [
+                        {
+                            "key": "downstream_cluster",
+                            "type": "string",
+                            "value": "-"
+                        },
+                        {
+                            "key": "upstream_cluster.name",
+                            "type": "string",
+                            "value": "outbound|8080||teastore-image.default.svc.cluster.local"
+                        },
+                        {
+                            "key": "response_size",
+                            "type": "string",
+                            "value": "4797"
+                        },
+                        {
+                            "key": "http.url",
+                            "type": "string",
+                            "value": "http://teastore-image:8080/tools.descartes.teastore.image/rest/image/getWebImages"
+                        },
+                        {
+                            "key": "istio.namespace",
+                            "type": "string",
+                            "value": "default"
+                        },
+                        {
+                            "key": "http.protocol",
+                            "type": "string",
+                            "value": "HTTP/1.1"
+                        },
+                        {
+                            "key": "upstream_cluster",
+                            "type": "string",
+                            "value": "outbound|8080||teastore-image.default.svc.cluster.local"
+                        },
+                        {
+                            "key": "istio.canonical_service",
+                            "type": "string",
+                            "value": "teastore"
+                        },
+                        {
+                            "key": "http.status_code",
+                            "type": "string",
+                            "value": "200"
+                        },
+                        {
+                            "key": "istio.canonical_revision",
+                            "type": "string",
+                            "value": "latest"
+                        },
+                        {
+                            "key": "peer.address",
+                            "type": "string",
+                            "value": "172.17.0.14"
+                        },
+                        {
+                            "key": "guid:x-request-id",
+                            "type": "string",
+                            "value": "b7048c9b-276f-428f-862b-2fcc4c7bfa34"
+                        },
+                        {
+                            "key": "istio.mesh_id",
+                            "type": "string",
+                            "value": "cluster.local"
+                        },
+                        {
+                            "key": "response_flags",
+                            "type": "string",
+                            "value": "-"
+                        },
+                        {
+                            "key": "http.method",
+                            "type": "string",
+                            "value": "POST"
+                        },
+                        {
+                            "key": "request_size",
+                            "type": "string",
+                            "value": "16"
+                        },
+                        {
+                            "key": "user_agent",
+                            "type": "string",
+                            "value": "Jersey/3.0.2 (Async HTTP Grizzly Connector 3.0.2)"
+                        },
+                        {
+                            "key": "component",
+                            "type": "string",
+                            "value": "proxy"
+                        },
+                        {
+                            "key": "node_id",
+                            "type": "string",
+                            "value": "sidecar~172.17.0.14~teastore-webui-7cb5985449-rb6pm.default~default.svc.cluster.local"
+                        },
+                        {
+                            "key": "span.kind",
+                            "type": "string",
+                            "value": "client"
+                        },
+                        {
+                            "key": "internal.span.format",
+                            "type": "string",
+                            "value": "zipkin"
+                        }
+                    ],
+                    "logs": [],
+                    "processID": "p1",
+                    "warnings": [
+                        "invalid parent span IDs=0e4ea7f8868e0971; skipping clock skew adjustment"
+                    ]
+                },
+                {
+                    "traceID": "0e4ea7f8868e0971",
+                    "spanID": "b68a09e208cbbee4",
+                    "operationName": "teastore-image.default.svc.cluster.local:8080/*",
+                    "references": [
+                        {
+                            "refType": "CHILD_OF",
+                            "traceID": "0e4ea7f8868e0971",
+                            "spanID": "a7be6d3bf31c1b59"
+                        }
+                    ],
+                    "startTime": 1659545582100836,
+                    "duration": 2558,
+                    "tags": [
+                        {
+                            "key": "upstream_cluster.name",
+                            "type": "string",
+                            "value": "inbound|8080||"
+                        },
+                        {
+                            "key": "istio.canonical_revision",
+                            "type": "string",
+                            "value": "latest"
+                        },
+                        {
+                            "key": "guid:x-request-id",
+                            "type": "string",
+                            "value": "b7048c9b-276f-428f-862b-2fcc4c7bfa34"
+                        },
+                        {
+                            "key": "node_id",
+                            "type": "string",
+                            "value": "sidecar~172.17.0.18~teastore-image-7db78b456c-85vw5.default~default.svc.cluster.local"
+                        },
+                        {
+                            "key": "istio.namespace",
+                            "type": "string",
+                            "value": "default"
+                        },
+                        {
+                            "key": "istio.mesh_id",
+                            "type": "string",
+                            "value": "cluster.local"
+                        },
+                        {
+                            "key": "request_size",
+                            "type": "string",
+                            "value": "16"
+                        },
+                        {
+                            "key": "response_size",
+                            "type": "string",
+                            "value": "4797"
+                        },
+                        {
+                            "key": "http.url",
+                            "type": "string",
+                            "value": "http://teastore-image:8080/tools.descartes.teastore.image/rest/image/getWebImages"
+                        },
+                        {
+                            "key": "istio.canonical_service",
+                            "type": "string",
+                            "value": "teastore"
+                        },
+                        {
+                            "key": "http.method",
+                            "type": "string",
+                            "value": "POST"
+                        },
+                        {
+                            "key": "http.status_code",
+                            "type": "string",
+                            "value": "200"
+                        },
+                        {
+                            "key": "response_flags",
+                            "type": "string",
+                            "value": "-"
+                        },
+                        {
+                            "key": "user_agent",
+                            "type": "string",
+                            "value": "Jersey/3.0.2 (Async HTTP Grizzly Connector 3.0.2)"
+                        },
+                        {
+                            "key": "upstream_cluster",
+                            "type": "string",
+                            "value": "inbound|8080||"
+                        },
+                        {
+                            "key": "component",
+                            "type": "string",
+                            "value": "proxy"
+                        },
+                        {
+                            "key": "peer.address",
+                            "type": "string",
+                            "value": "172.17.0.14"
+                        },
+                        {
+                            "key": "http.protocol",
+                            "type": "string",
+                            "value": "HTTP/1.1"
+                        },
+                        {
+                            "key": "downstream_cluster",
+                            "type": "string",
+                            "value": "-"
+                        },
+                        {
+                            "key": "span.kind",
+                            "type": "string",
+                            "value": "server"
+                        },
+                        {
+                            "key": "internal.span.format",
+                            "type": "string",
+                            "value": "zipkin"
+                        }
+                    ],
+                    "logs": [],
+                    "processID": "p4",
+                    "warnings": null
+                }
+            ],
+            "processes": {
+                "p1": {
+                    "serviceName": "teastore.default",
+                    "tags": [
+                        {
+                            "key": "ip",
+                            "type": "string",
+                            "value": "172.17.0.14"
+                        }
+                    ]
+                },
+                "p2": {
+                    "serviceName": "teastore.default",
+                    "tags": [
+                        {
+                            "key": "ip",
+                            "type": "string",
+                            "value": "172.17.0.15"
+                        }
+                    ]
+                },
+                "p3": {
+                    "serviceName": "teastore.default",
+                    "tags": [
+                        {
+                            "key": "ip",
+                            "type": "string",
+                            "value": "172.17.0.10"
+                        }
+                    ]
+                },
+                "p4": {
+                    "serviceName": "teastore.default",
+                    "tags": [
+                        {
+                            "key": "ip",
+                            "type": "string",
+                            "value": "172.17.0.18"
+                        }
+                    ]
+                }
+            },
+            "warnings": null
+        }
+    ],
+    "total": 0,
+    "limit": 0,
+    "offset": 0,
+    "errors": null
+}

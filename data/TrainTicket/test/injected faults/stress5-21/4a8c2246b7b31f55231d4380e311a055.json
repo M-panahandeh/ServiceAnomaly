@@ -1,0 +1,546 @@
+{
+    "data": [
+        {
+            "traceID": "4a8c2246b7b31f55231d4380e311a055",
+            "spans": [
+                {
+                    "traceID": "4a8c2246b7b31f55231d4380e311a055",
+                    "spanID": "231d4380e311a055",
+                    "operationName": "ts-order-service.default.svc.cluster.local:12031/*",
+                    "references": [],
+                    "startTime": 1652936563231371,
+                    "duration": 69978,
+                    "tags": [
+                        {
+                            "key": "http.method",
+                            "type": "string",
+                            "value": "GET"
+                        },
+                        {
+                            "key": "component",
+                            "type": "string",
+                            "value": "proxy"
+                        },
+                        {
+                            "key": "http.status_code",
+                            "type": "string",
+                            "value": "503"
+                        },
+                        {
+                            "key": "upstream_cluster.name",
+                            "type": "string",
+                            "value": "outbound|12031||ts-order-service.default.svc.cluster.local"
+                        },
+                        {
+                            "key": "request_size",
+                            "type": "string",
+                            "value": "0"
+                        },
+                        {
+                            "key": "error",
+                            "type": "bool",
+                            "value": true
+                        },
+                        {
+                            "key": "guid:x-request-id",
+                            "type": "string",
+                            "value": "0ce675b0-6ba2-97c7-a75e-2429869539fa"
+                        },
+                        {
+                            "key": "user_agent",
+                            "type": "string",
+                            "value": "Java/1.8.0_111"
+                        },
+                        {
+                            "key": "istio.canonical_service",
+                            "type": "string",
+                            "value": "ts-ui-dashboard"
+                        },
+                        {
+                            "key": "response_size",
+                            "type": "string",
+                            "value": "91"
+                        },
+                        {
+                            "key": "istio.namespace",
+                            "type": "string",
+                            "value": "default"
+                        },
+                        {
+                            "key": "downstream_cluster",
+                            "type": "string",
+                            "value": "-"
+                        },
+                        {
+                            "key": "istio.mesh_id",
+                            "type": "string",
+                            "value": "cluster.local"
+                        },
+                        {
+                            "key": "istio.canonical_revision",
+                            "type": "string",
+                            "value": "latest"
+                        },
+                        {
+                            "key": "node_id",
+                            "type": "string",
+                            "value": "sidecar~172.17.0.47~ts-ui-dashboard-7b84f5c68b-vcvms.default~default.svc.cluster.local"
+                        },
+                        {
+                            "key": "peer.address",
+                            "type": "string",
+                            "value": "172.17.0.47"
+                        },
+                        {
+                            "key": "http.url",
+                            "type": "string",
+                            "value": "http://ts-order-service:12031/api/v1/orderservice/order/Thu%20May%2018%2008:00:00%20CST%202023/D1345"
+                        },
+                        {
+                            "key": "response_flags",
+                            "type": "string",
+                            "value": "URX"
+                        },
+                        {
+                            "key": "http.protocol",
+                            "type": "string",
+                            "value": "HTTP/1.1"
+                        },
+                        {
+                            "key": "upstream_cluster",
+                            "type": "string",
+                            "value": "outbound|12031||ts-order-service.default.svc.cluster.local"
+                        },
+                        {
+                            "key": "span.kind",
+                            "type": "string",
+                            "value": "client"
+                        },
+                        {
+                            "key": "internal.span.format",
+                            "type": "string",
+                            "value": "zipkin"
+                        }
+                    ],
+                    "logs": [],
+                    "processID": "p1",
+                    "warnings": null
+                },
+                {
+                    "traceID": "4a8c2246b7b31f55231d4380e311a055",
+                    "spanID": "e37e6a88591eb612",
+                    "operationName": "ts-order-service.default.svc.cluster.local:12031/*",
+                    "references": [
+                        {
+                            "refType": "CHILD_OF",
+                            "traceID": "4a8c2246b7b31f55231d4380e311a055",
+                            "spanID": "231d4380e311a055"
+                        }
+                    ],
+                    "startTime": 1652936563231580,
+                    "duration": 204,
+                    "tags": [
+                        {
+                            "key": "istio.canonical_revision",
+                            "type": "string",
+                            "value": "latest"
+                        },
+                        {
+                            "key": "response_size",
+                            "type": "string",
+                            "value": "91"
+                        },
+                        {
+                            "key": "http.protocol",
+                            "type": "string",
+                            "value": "HTTP/1.1"
+                        },
+                        {
+                            "key": "request_size",
+                            "type": "string",
+                            "value": "0"
+                        },
+                        {
+                            "key": "http.url",
+                            "type": "string",
+                            "value": "http://ts-order-service:12031/api/v1/orderservice/order/Thu%20May%2018%2008:00:00%20CST%202023/D1345"
+                        },
+                        {
+                            "key": "downstream_cluster",
+                            "type": "string",
+                            "value": "-"
+                        },
+                        {
+                            "key": "istio.mesh_id",
+                            "type": "string",
+                            "value": "cluster.local"
+                        },
+                        {
+                            "key": "node_id",
+                            "type": "string",
+                            "value": "sidecar~172.17.0.51~ts-order-service-85869466c4-hwpfk.default~default.svc.cluster.local"
+                        },
+                        {
+                            "key": "http.method",
+                            "type": "string",
+                            "value": "GET"
+                        },
+                        {
+                            "key": "upstream_cluster",
+                            "type": "string",
+                            "value": "inbound|12031||"
+                        },
+                        {
+                            "key": "istio.canonical_service",
+                            "type": "string",
+                            "value": "ts-order-service"
+                        },
+                        {
+                            "key": "http.status_code",
+                            "type": "string",
+                            "value": "503"
+                        },
+                        {
+                            "key": "component",
+                            "type": "string",
+                            "value": "proxy"
+                        },
+                        {
+                            "key": "upstream_cluster.name",
+                            "type": "string",
+                            "value": "inbound|12031||"
+                        },
+                        {
+                            "key": "guid:x-request-id",
+                            "type": "string",
+                            "value": "0ce675b0-6ba2-97c7-a75e-2429869539fa"
+                        },
+                        {
+                            "key": "user_agent",
+                            "type": "string",
+                            "value": "Java/1.8.0_111"
+                        },
+                        {
+                            "key": "response_flags",
+                            "type": "string",
+                            "value": "UF"
+                        },
+                        {
+                            "key": "istio.namespace",
+                            "type": "string",
+                            "value": "default"
+                        },
+                        {
+                            "key": "peer.address",
+                            "type": "string",
+                            "value": "172.17.0.47"
+                        },
+                        {
+                            "key": "error",
+                            "type": "bool",
+                            "value": true
+                        },
+                        {
+                            "key": "span.kind",
+                            "type": "string",
+                            "value": "server"
+                        },
+                        {
+                            "key": "internal.span.format",
+                            "type": "string",
+                            "value": "zipkin"
+                        }
+                    ],
+                    "logs": [],
+                    "processID": "p2",
+                    "warnings": null
+                },
+                {
+                    "traceID": "4a8c2246b7b31f55231d4380e311a055",
+                    "spanID": "769154a3e7359d6c",
+                    "operationName": "ts-order-service.default.svc.cluster.local:12031/*",
+                    "references": [
+                        {
+                            "refType": "CHILD_OF",
+                            "traceID": "4a8c2246b7b31f55231d4380e311a055",
+                            "spanID": "231d4380e311a055"
+                        }
+                    ],
+                    "startTime": 1652936563247817,
+                    "duration": 188,
+                    "tags": [
+                        {
+                            "key": "http.protocol",
+                            "type": "string",
+                            "value": "HTTP/1.1"
+                        },
+                        {
+                            "key": "istio.mesh_id",
+                            "type": "string",
+                            "value": "cluster.local"
+                        },
+                        {
+                            "key": "upstream_cluster.name",
+                            "type": "string",
+                            "value": "inbound|12031||"
+                        },
+                        {
+                            "key": "user_agent",
+                            "type": "string",
+                            "value": "Java/1.8.0_111"
+                        },
+                        {
+                            "key": "response_size",
+                            "type": "string",
+                            "value": "91"
+                        },
+                        {
+                            "key": "http.url",
+                            "type": "string",
+                            "value": "http://ts-order-service:12031/api/v1/orderservice/order/Thu%20May%2018%2008:00:00%20CST%202023/D1345"
+                        },
+                        {
+                            "key": "peer.address",
+                            "type": "string",
+                            "value": "172.17.0.47"
+                        },
+                        {
+                            "key": "node_id",
+                            "type": "string",
+                            "value": "sidecar~172.17.0.51~ts-order-service-85869466c4-hwpfk.default~default.svc.cluster.local"
+                        },
+                        {
+                            "key": "guid:x-request-id",
+                            "type": "string",
+                            "value": "0ce675b0-6ba2-97c7-a75e-2429869539fa"
+                        },
+                        {
+                            "key": "error",
+                            "type": "bool",
+                            "value": true
+                        },
+                        {
+                            "key": "response_flags",
+                            "type": "string",
+                            "value": "UF"
+                        },
+                        {
+                            "key": "istio.canonical_revision",
+                            "type": "string",
+                            "value": "latest"
+                        },
+                        {
+                            "key": "component",
+                            "type": "string",
+                            "value": "proxy"
+                        },
+                        {
+                            "key": "istio.canonical_service",
+                            "type": "string",
+                            "value": "ts-order-service"
+                        },
+                        {
+                            "key": "istio.namespace",
+                            "type": "string",
+                            "value": "default"
+                        },
+                        {
+                            "key": "http.method",
+                            "type": "string",
+                            "value": "GET"
+                        },
+                        {
+                            "key": "http.status_code",
+                            "type": "string",
+                            "value": "503"
+                        },
+                        {
+                            "key": "upstream_cluster",
+                            "type": "string",
+                            "value": "inbound|12031||"
+                        },
+                        {
+                            "key": "downstream_cluster",
+                            "type": "string",
+                            "value": "-"
+                        },
+                        {
+                            "key": "request_size",
+                            "type": "string",
+                            "value": "0"
+                        },
+                        {
+                            "key": "span.kind",
+                            "type": "string",
+                            "value": "server"
+                        },
+                        {
+                            "key": "internal.span.format",
+                            "type": "string",
+                            "value": "zipkin"
+                        }
+                    ],
+                    "logs": [],
+                    "processID": "p2",
+                    "warnings": null
+                },
+                {
+                    "traceID": "4a8c2246b7b31f55231d4380e311a055",
+                    "spanID": "f6d3ecbbfe35783b",
+                    "operationName": "ts-order-service.default.svc.cluster.local:12031/*",
+                    "references": [
+                        {
+                            "refType": "CHILD_OF",
+                            "traceID": "4a8c2246b7b31f55231d4380e311a055",
+                            "spanID": "231d4380e311a055"
+                        }
+                    ],
+                    "startTime": 1652936563299757,
+                    "duration": 572,
+                    "tags": [
+                        {
+                            "key": "istio.mesh_id",
+                            "type": "string",
+                            "value": "cluster.local"
+                        },
+                        {
+                            "key": "peer.address",
+                            "type": "string",
+                            "value": "172.17.0.47"
+                        },
+                        {
+                            "key": "node_id",
+                            "type": "string",
+                            "value": "sidecar~172.17.0.51~ts-order-service-85869466c4-hwpfk.default~default.svc.cluster.local"
+                        },
+                        {
+                            "key": "request_size",
+                            "type": "string",
+                            "value": "0"
+                        },
+                        {
+                            "key": "response_flags",
+                            "type": "string",
+                            "value": "UF"
+                        },
+                        {
+                            "key": "istio.namespace",
+                            "type": "string",
+                            "value": "default"
+                        },
+                        {
+                            "key": "upstream_cluster",
+                            "type": "string",
+                            "value": "inbound|12031||"
+                        },
+                        {
+                            "key": "http.method",
+                            "type": "string",
+                            "value": "GET"
+                        },
+                        {
+                            "key": "http.protocol",
+                            "type": "string",
+                            "value": "HTTP/1.1"
+                        },
+                        {
+                            "key": "downstream_cluster",
+                            "type": "string",
+                            "value": "-"
+                        },
+                        {
+                            "key": "error",
+                            "type": "bool",
+                            "value": true
+                        },
+                        {
+                            "key": "guid:x-request-id",
+                            "type": "string",
+                            "value": "0ce675b0-6ba2-97c7-a75e-2429869539fa"
+                        },
+                        {
+                            "key": "http.status_code",
+                            "type": "string",
+                            "value": "503"
+                        },
+                        {
+                            "key": "component",
+                            "type": "string",
+                            "value": "proxy"
+                        },
+                        {
+                            "key": "http.url",
+                            "type": "string",
+                            "value": "http://ts-order-service:12031/api/v1/orderservice/order/Thu%20May%2018%2008:00:00%20CST%202023/D1345"
+                        },
+                        {
+                            "key": "response_size",
+                            "type": "string",
+                            "value": "91"
+                        },
+                        {
+                            "key": "upstream_cluster.name",
+                            "type": "string",
+                            "value": "inbound|12031||"
+                        },
+                        {
+                            "key": "istio.canonical_service",
+                            "type": "string",
+                            "value": "ts-order-service"
+                        },
+                        {
+                            "key": "istio.canonical_revision",
+                            "type": "string",
+                            "value": "latest"
+                        },
+                        {
+                            "key": "user_agent",
+                            "type": "string",
+                            "value": "Java/1.8.0_111"
+                        },
+                        {
+                            "key": "span.kind",
+                            "type": "string",
+                            "value": "server"
+                        },
+                        {
+                            "key": "internal.span.format",
+                            "type": "string",
+                            "value": "zipkin"
+                        }
+                    ],
+                    "logs": [],
+                    "processID": "p2",
+                    "warnings": null
+                }
+            ],
+            "processes": {
+                "p1": {
+                    "serviceName": "ts-ui-dashboard",
+                    "tags": [
+                        {
+                            "key": "ip",
+                            "type": "string",
+                            "value": "172.17.0.47"
+                        }
+                    ]
+                },
+                "p2": {
+                    "serviceName": "ts-order-service.default",
+                    "tags": [
+                        {
+                            "key": "ip",
+                            "type": "string",
+                            "value": "172.17.0.51"
+                        }
+                    ]
+                }
+            },
+            "warnings": null
+        }
+    ],
+    "total": 0,
+    "limit": 0,
+    "offset": 0,
+    "errors": null
+}

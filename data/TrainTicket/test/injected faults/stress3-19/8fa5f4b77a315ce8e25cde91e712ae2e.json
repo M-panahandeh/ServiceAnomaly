@@ -1,0 +1,288 @@
+{
+    "data": [
+        {
+            "traceID": "8fa5f4b77a315ce8e25cde91e712ae2e",
+            "spans": [
+                {
+                    "traceID": "8fa5f4b77a315ce8e25cde91e712ae2e",
+                    "spanID": "e25cde91e712ae2e",
+                    "operationName": "ts-route-service.default.svc.cluster.local:14578/*",
+                    "references": [],
+                    "startTime": 1652936297188434,
+                    "duration": 40189,
+                    "tags": [
+                        {
+                            "key": "http.url",
+                            "type": "string",
+                            "value": "http://ts-route-service:14578/api/v1/routeservice/route/quickestRoute"
+                        },
+                        {
+                            "key": "http.status_code",
+                            "type": "string",
+                            "value": "500"
+                        },
+                        {
+                            "key": "upstream_cluster.name",
+                            "type": "string",
+                            "value": "outbound|14578||ts-route-service.default.svc.cluster.local"
+                        },
+                        {
+                            "key": "http.method",
+                            "type": "string",
+                            "value": "POST"
+                        },
+                        {
+                            "key": "istio.namespace",
+                            "type": "string",
+                            "value": "default"
+                        },
+                        {
+                            "key": "downstream_cluster",
+                            "type": "string",
+                            "value": "-"
+                        },
+                        {
+                            "key": "istio.mesh_id",
+                            "type": "string",
+                            "value": "cluster.local"
+                        },
+                        {
+                            "key": "istio.canonical_service",
+                            "type": "string",
+                            "value": "ts-travel-service"
+                        },
+                        {
+                            "key": "user_agent",
+                            "type": "string",
+                            "value": "Java/1.8.0_111"
+                        },
+                        {
+                            "key": "response_size",
+                            "type": "string",
+                            "value": "208"
+                        },
+                        {
+                            "key": "component",
+                            "type": "string",
+                            "value": "proxy"
+                        },
+                        {
+                            "key": "response_flags",
+                            "type": "string",
+                            "value": "-"
+                        },
+                        {
+                            "key": "http.protocol",
+                            "type": "string",
+                            "value": "HTTP/1.1"
+                        },
+                        {
+                            "key": "peer.address",
+                            "type": "string",
+                            "value": "172.17.0.45"
+                        },
+                        {
+                            "key": "upstream_cluster",
+                            "type": "string",
+                            "value": "outbound|14578||ts-route-service.default.svc.cluster.local"
+                        },
+                        {
+                            "key": "request_size",
+                            "type": "string",
+                            "value": "92"
+                        },
+                        {
+                            "key": "guid:x-request-id",
+                            "type": "string",
+                            "value": "5e8b56d4-fe05-9e42-a7d4-c64cc528e0a9"
+                        },
+                        {
+                            "key": "istio.canonical_revision",
+                            "type": "string",
+                            "value": "latest"
+                        },
+                        {
+                            "key": "node_id",
+                            "type": "string",
+                            "value": "sidecar~172.17.0.45~ts-travel-service-868c5dcff4-x7cn8.default~default.svc.cluster.local"
+                        },
+                        {
+                            "key": "error",
+                            "type": "bool",
+                            "value": true
+                        },
+                        {
+                            "key": "span.kind",
+                            "type": "string",
+                            "value": "client"
+                        },
+                        {
+                            "key": "internal.span.format",
+                            "type": "string",
+                            "value": "zipkin"
+                        }
+                    ],
+                    "logs": [],
+                    "processID": "p1",
+                    "warnings": null
+                },
+                {
+                    "traceID": "8fa5f4b77a315ce8e25cde91e712ae2e",
+                    "spanID": "28fb98167e1acc48",
+                    "operationName": "ts-route-service.default.svc.cluster.local:14578/*",
+                    "references": [
+                        {
+                            "refType": "CHILD_OF",
+                            "traceID": "8fa5f4b77a315ce8e25cde91e712ae2e",
+                            "spanID": "e25cde91e712ae2e"
+                        }
+                    ],
+                    "startTime": 1652936297188689,
+                    "duration": 39408,
+                    "tags": [
+                        {
+                            "key": "response_flags",
+                            "type": "string",
+                            "value": "-"
+                        },
+                        {
+                            "key": "istio.canonical_service",
+                            "type": "string",
+                            "value": "ts-route-service"
+                        },
+                        {
+                            "key": "http.method",
+                            "type": "string",
+                            "value": "POST"
+                        },
+                        {
+                            "key": "component",
+                            "type": "string",
+                            "value": "proxy"
+                        },
+                        {
+                            "key": "upstream_cluster.name",
+                            "type": "string",
+                            "value": "inbound|14578||"
+                        },
+                        {
+                            "key": "peer.address",
+                            "type": "string",
+                            "value": "172.17.0.45"
+                        },
+                        {
+                            "key": "downstream_cluster",
+                            "type": "string",
+                            "value": "-"
+                        },
+                        {
+                            "key": "http.url",
+                            "type": "string",
+                            "value": "http://ts-route-service:14578/api/v1/routeservice/route/quickestRoute"
+                        },
+                        {
+                            "key": "response_size",
+                            "type": "string",
+                            "value": "208"
+                        },
+                        {
+                            "key": "user_agent",
+                            "type": "string",
+                            "value": "Java/1.8.0_111"
+                        },
+                        {
+                            "key": "istio.namespace",
+                            "type": "string",
+                            "value": "default"
+                        },
+                        {
+                            "key": "node_id",
+                            "type": "string",
+                            "value": "sidecar~172.17.0.32~ts-route-service-6c7575864b-w22ks.default~default.svc.cluster.local"
+                        },
+                        {
+                            "key": "http.protocol",
+                            "type": "string",
+                            "value": "HTTP/1.1"
+                        },
+                        {
+                            "key": "istio.mesh_id",
+                            "type": "string",
+                            "value": "cluster.local"
+                        },
+                        {
+                            "key": "upstream_cluster",
+                            "type": "string",
+                            "value": "inbound|14578||"
+                        },
+                        {
+                            "key": "request_size",
+                            "type": "string",
+                            "value": "92"
+                        },
+                        {
+                            "key": "http.status_code",
+                            "type": "string",
+                            "value": "500"
+                        },
+                        {
+                            "key": "istio.canonical_revision",
+                            "type": "string",
+                            "value": "latest"
+                        },
+                        {
+                            "key": "error",
+                            "type": "bool",
+                            "value": true
+                        },
+                        {
+                            "key": "guid:x-request-id",
+                            "type": "string",
+                            "value": "5e8b56d4-fe05-9e42-a7d4-c64cc528e0a9"
+                        },
+                        {
+                            "key": "span.kind",
+                            "type": "string",
+                            "value": "server"
+                        },
+                        {
+                            "key": "internal.span.format",
+                            "type": "string",
+                            "value": "zipkin"
+                        }
+                    ],
+                    "logs": [],
+                    "processID": "p2",
+                    "warnings": null
+                }
+            ],
+            "processes": {
+                "p1": {
+                    "serviceName": "ts-travel-service.default",
+                    "tags": [
+                        {
+                            "key": "ip",
+                            "type": "string",
+                            "value": "172.17.0.45"
+                        }
+                    ]
+                },
+                "p2": {
+                    "serviceName": "ts-route-service.default",
+                    "tags": [
+                        {
+                            "key": "ip",
+                            "type": "string",
+                            "value": "172.17.0.32"
+                        }
+                    ]
+                }
+            },
+            "warnings": null
+        }
+    ],
+    "total": 0,
+    "limit": 0,
+    "offset": 0,
+    "errors": null
+}

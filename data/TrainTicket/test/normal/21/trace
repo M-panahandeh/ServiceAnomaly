@@ -1,0 +1,1 @@
+[{'parent': 'ts-travel-service.default', 'child': 'ts-seat-service.default'},{'parent': 'ts-seat-service.default', 'child': 'ts-config-service.default'}]

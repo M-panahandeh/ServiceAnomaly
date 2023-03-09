@@ -1,0 +1,1 @@
+[{'parent': 'ts-ui-dashboard.default', 'child': 'ts-preserve-service.default'},{'parent': 'ts-preserve-service.default', 'child': 'ts-security-service.default'},{'parent': 'ts-preserve-service.default', 'child': 'ts-contacts-service.default'}]

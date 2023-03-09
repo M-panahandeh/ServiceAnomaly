@@ -1,0 +1,2 @@
+[{'parent': 'ts-ui-dashboard.default', 'child': 'ts-order-service.default'},{'parent': 'ts-ui-dashboard.default', 'child': 'ts-order-service.default'},{'parent': 'ts-ui-dashboards.default', 'child': 'ts-order-service.default'}]
+
